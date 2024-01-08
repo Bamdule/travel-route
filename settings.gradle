@@ -1,0 +1,7 @@
+rootProject.name = 'travel-route'
+include 'travel-route-api'
+include 'travel-route-domain'
+include 'storage'
+include 'storage:db-jpa'
+findProject(':storage:db-jpa')?.name = 'db-jpa'
+
